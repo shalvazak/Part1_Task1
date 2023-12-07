@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        ● დაწერე ფუნქცია, რომელიც პარამეტრად
+        მიიღებს a (პირველი რიცხვი), b (მეორე
+        რიცხვი) და operation (+, -, *, /) და
+        დააბრუნებს ახალ მნიშვნელობას,
+        რომელიც მიიღება ამ ორ რიცხვზე
+        operation ცვლადში განსაზღვრული
+        ოპერაციით
+    </p>
+    <p>
+        ● თუ a და b არ არიან რიცხვები, ან თუ
+        operation ცვლადში არის უცნობი,
+        ოპერაცია დააბრუნე - false
+    </p>
+
+    <script>
+        function myFunc (a,b,operation){
+            if (typeof a === "number" && typeof b === "number" && 
+            (operation === "+" || operation === "-" || operation === "*" || operation === "/")) {
+                if (operation === "+") {
+                    console.log(a+b);
+                }
+                if (operation === "-") {
+                    console.log(a-b);
+                }
+                if (operation === "*") {
+                    console.log(a*b);
+                }
+                if (operation === "/") {
+                    console.log(a/b);
+                }
+            }else{
+                console.log("false");
+            }
+        }
+
+        myFunc(12, 3, '/');
+        myFunc(12, 3, '+');
+        myFunc(12, 3, 'mm');
+        myFunc(12, "8", '/');
+        myFunc("12", 8, '/');
+        myFunc("12", "8", '/');
+
+    </script>
+</body>
+</html>

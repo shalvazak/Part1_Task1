@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>● დაწერე ფუნქცია, რომელიც მიიღებს a და b
+        პარამეტრებს და დააბრუნებს ტექსტს
+        “ტოლია” თუ a უდრის b-ს, ხოლო
+        წინააღმდეგ შემთხვევაში, დააბრუნებს “არ 
+        არის ტოლი”
+    </p>
+    <p>
+        ● გაითვალისწინე, რომ a და b ყოველთვის
+        ერთი და იგივე ტიპის არ არის
+    </p>
+
+    <script>
+        function myfunc (a,b) {
+            if ( a===b ) {
+                console.log('ტოლია');
+            }else{
+                console.log('არ არის ტოლი');
+            }
+        }
+
+        myfunc(3,5);
+        myfunc(5,5);
+        myfunc(5,'5');
+    </script>
+</body>
+</html>

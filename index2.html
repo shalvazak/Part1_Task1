@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        ● დაწერე ფუნქცია, რომელიც პარამეტრად
+        მიიღებს ტემპერატურას ფარენჰეიტებში და
+        დააბრუნებს ტემპერატურას ცელსიუსში
+    </p>
+    <p>
+        ● თუ პარამეტრი არ არის რიცხვითი მონაცემი
+        დააბრუნე - false
+    </p>
+
+    <script>
+        function myFunc (a) {
+            if (typeof a === "number"){
+                let fahrenheit = a;
+                let celsius = (fahrenheit - 32) * 5/9;
+                console.log(celsius + " °C");
+            }else{
+                console.log("false");
+            }
+        } 
+
+        myFunc(100);
+        myFunc('100');
+        myFunc("bb");
+    </script>
+</body>
+</html>
